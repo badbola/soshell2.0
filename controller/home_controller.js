@@ -1,3 +1,5 @@
 module.exports.home = function(req, res){
-    return res.end('<h1>Soshell is everywhere</h1>')
+    return res.render('home', {
+        title: 'Soshell Homepage'
+    });
 }
