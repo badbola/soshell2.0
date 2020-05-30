@@ -39,3 +39,8 @@ module.exports.create = function(req,res){
 module.exports.createSession = function(req,res){
     return res.redirect('/');
 }
+module.exports.destroySession = function(req,res){
+    //res.cookie('soshell',0);
+    req.logout();
+    return res.redirect('/');
+}
